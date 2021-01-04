@@ -57,6 +57,10 @@ h1 {
   border: 0;
 }
 
+.answer:hover {
+  background-color: #1C3455;
+}
+
 .ballBox {
   object-fit: contain;
   align-self: center;
@@ -65,10 +69,21 @@ h1 {
   justify-content: center;
 }
 
-.ball {
+.output {
+  box-sizing: border-box;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   flex-basis: 25%;
   max-height: 30%;
   margin:10%;
+  width: 80%;
+}
+
+.ball {
+  max-height: 100%;
+  margin: 0;
 }
 
 .clear {
@@ -89,4 +104,8 @@ h1 {
 
 .woody {
   max-height: 100%;
+}
+
+.hidden {
+  visibility: none;
 }
