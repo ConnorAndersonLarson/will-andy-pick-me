@@ -43,7 +43,7 @@ function getAnswer() {
 
 function changePage(randString) {
   if (randString === randomAnswer) {
-    img.innerHTML=`<section class="mirror">${input.value}</section><section class="response">${randString}</section>`;
+    img.innerHTML=`<section class="mirror">"${input.value}"</section><section class="response">${randString}</section>`;
 
     clear.classList.toggle('active')
   } else {

@@ -86,6 +86,18 @@ h1 {
   margin: 0;
 }
 
+.mirror {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-style: italic;
+}
+
+.response {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
 .clear {
   background-color: #D0CDCD;
   color: white;
