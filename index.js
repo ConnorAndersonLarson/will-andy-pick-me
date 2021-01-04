@@ -34,18 +34,18 @@ clear.addEventListener('click', changePage)
 function getAnswer() {
   randomAnswer = answers[Math.floor(Math.random()*Math.floor(answers.length))]
   changePage(randomAnswer)
-
+  var question = input.value
+  input.value = 'Ask your question here!'
+  return question
 }
 
 function changePage(randString) {
   if (randString === randomAnswer) {
-    img.innerHTML=`
-                <section class="mirror">
-                </section>
-                <section class="response">
-                </section>
-              `
+    img.innerHTML=`<section class="mirror">${input.value}</section><section class="response">${randString}</section>`;
+
+    clear.classList.toggle('active')
   } else {
     img.innerHTML=`<img class="ball" src="./assets/eight-ball.png">`
+    clear.classList.toggle('active')
   }
 }
