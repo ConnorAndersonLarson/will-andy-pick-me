@@ -32,11 +32,13 @@ answer.addEventListener('click', getAnswer)
 clear.addEventListener('click', changePage)
 
 function getAnswer() {
+  if (input.value != 'Ask your question here!') {
   randomAnswer = answers[Math.floor(Math.random()*Math.floor(answers.length))]
   changePage(randomAnswer)
   var question = input.value
   input.value = 'Ask your question here!'
   return question
+  }
 }
 
 function changePage(randString) {

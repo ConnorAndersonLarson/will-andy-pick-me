@@ -96,10 +96,12 @@ h1 {
   box-sizing: border-box;
   padding: 1.5%;
   width: 12%;
+  pointer-events: none;
 }
 
 .active {
   background-color: #DE4841;
+  pointer-events: all;
 }
 
 .woody {
